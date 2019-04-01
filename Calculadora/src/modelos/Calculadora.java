@@ -5,43 +5,8 @@ import java.awt.event.*;
 import java.awt.*;
 
 /*
- * Composicion de las cosas (mas o menos): 
- *
-	frame {
-		
-		framePanel {
-			
-			menuPanel {
-				
-				menuBar {
-					
-					menu1 {
-						
-						modo1
-						modo2
-						
-					}
-					
-				}
-				
-			}
-			
-			textPanel {
-				
-				textbox
-				
-			}
-			
-			mainPanel {
-				
-				todos los botones
-				
-			}
-			
-		}
-		
-	}
-	*/
+Algunos comentarios estan desactualizados...
+*/
 
 public class Calculadora extends JFrame implements ActionListener {
 
@@ -189,7 +154,7 @@ public class Calculadora extends JFrame implements ActionListener {
 	private void setButtons(int buttonMode) {
 		
 		/*
-		 * Este metodo añade funcionamiento a los botones y sus respectivos colores, dependiendo del modo
+		 * Este metodo aÃ±ade funcionamiento a los botones y sus respectivos colores, dependiendo del modo
 		 */
 		
 		if(buttonMode == -1) {//DEFAULT
