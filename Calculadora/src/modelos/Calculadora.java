@@ -343,6 +343,7 @@ public class Calculadora extends JFrame implements ActionListener {
 		/*
 		 * La operacion en binario consiste en pasar los numeros ingresados a base 10, hacer los calculos en
 		 * base 10, y pasar el resultado a base 2
+		 * por el momento solo suma.
 		 */
 		
 		
@@ -374,7 +375,7 @@ public class Calculadora extends JFrame implements ActionListener {
 			switch(nOperador) {
 
 			case "+": temp = pasarBase10(nOperando1) + pasarBase10(nOperando2);break;//suma
-			case "-": temp = Double.parseDouble(nOperando1) - Double.parseDouble(nOperando2);break;//resta
+			//case "-": temp = Double.parseDouble(nOperando1) - Double.parseDouble(nOperando2);break;//resta
 
 			}
 
@@ -410,7 +411,7 @@ public class Calculadora extends JFrame implements ActionListener {
 				switch(nOperador) {
 
 				case "+": temp = pasarBase10(nOperando1) + pasarBase10(nOperando2);break;//suma
-				case "-": temp = Double.parseDouble(nOperando1) - Double.parseDouble(nOperando2);break;//resta
+				//case "-": temp = Double.parseDouble(nOperando1) - Double.parseDouble(nOperando2);break;//resta
 	
 				}
 
@@ -452,7 +453,8 @@ public class Calculadora extends JFrame implements ActionListener {
 			
 		 }else if(aux == "Acerca de") {
 			 
-			 JOptionPane.showMessageDialog(menuBar, "Autor   -   Alan Blangille\nVersion  -  1.0", "Acerca de Calculadora", 1,img2);
+			 JOptionPane.showMessageDialog(menuBar, 
+			 "Autor   -   Alan Blangille\nVersion  -  1.0\nwww.github.com/arbp97/Calculadora_Java_basico", "Acerca de Calculadora", 1,img2);
 			 aux = "";
 		 }
 		 
