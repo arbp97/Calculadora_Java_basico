@@ -7,11 +7,10 @@ import modelos.Calculadora;
 public class Main {
 
 	public static void main(String[] args){
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub UIManager.getSystemLookAndFeelClassName()
 		
 		 try {
-			UIManager.setLookAndFeel(
-			            UIManager.getSystemLookAndFeelClassName());
+			UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -28,7 +27,7 @@ public class Main {
 		
 		Calculadora calculadora = new Calculadora();
 		
-		calculadora.getFrame().setVisible(true);
+		calculadora.setVisible(true);
 		
 			
 	}
